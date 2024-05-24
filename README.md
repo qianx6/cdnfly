@@ -7,7 +7,7 @@ wget https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/web/web.tar.g
 
 tar -zxvf web.tar.gz
 
-0.0.0.0改成(自己搭建的验证服务器IP)
+0.0.0.0改成(自己搭建的验证服务器IP，主控全部需要设置，节点只需要设置auth)
 
 vi /etc/hosts
 
