@@ -8,15 +8,22 @@ wget https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/web/web.tar.g
 tar -zxvf web.tar.gz
 
 0.0.0.0改成(自己搭建的验证服务器IP)
+
 vi /etc/hosts
 
 0.0.0.0 auth.cdnfly.cn
+
 0.0.0.0 monitor.cdnfly.cn
+
 0.0.0.0 update.cdnfly.cn (注意：如果cdnfly官方挂了再设置)
+
 0.0.0.0 dl2.cdnfly.cn (注意：如果cdnfly官方挂了再设置)
 
+
 主控登录地址为: http://主控IP/
+
 管理员账号和密码： wenjian/wenjian
+
 普通用户账号和密码： ceshi/ceshi
 
 注意：验证服务器用bt安装，并且php版本为5.6
@@ -24,6 +31,7 @@ vi /etc/hosts
 备注：
 
 监控默认是使用云端服务器去请求CDN节点，因此要保持云端和CDN节点之间的网络畅通。另外如果是用宝塔面板，php不要安装bt_safe扩展，否则无法使用tcp类型监控；如果要用ping类型监控，还需要允许exec函数。
+
 支持多节点监控（和官方一样），要添加其它监控节点，可以编辑config.php配置文件，根据里面的注释说明添加。
 
 
