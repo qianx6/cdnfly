@@ -51,3 +51,19 @@ curl -fsSL https://github.com/freejbgo/cdnfly-kaixin/raw/main/agent.sh -o agent.
 
 
 
+问题解决--持续更新中：
+
+
+普通用户的账户中心中的bug修复：
+
+cd /opt/cdnfly/master/panel/src/views/account
+
+删除三个文件：balance、log、order
+
+然后用下面命令重新生成软链接：
+
+ln -s ../finance/balance/ balance
+
+ln -s ../system/log/ log
+
+ln -s ../finance/order/ order
