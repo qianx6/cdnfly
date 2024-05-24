@@ -154,7 +154,7 @@ tar_gz_name="$dir_name-$(get_sys_ver).tar.gz"
 # 下载安装包
 cd /opt
 echo "开始下载$tar_gz_name..."
-download "https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/cdnfly/$tar_gz_name" "https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/cdnfly/$tar_gz_name" "https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/cdnfly/$tar_gz_name" "$tar_gz_name"
+download "https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/cdnfly/$tar_gz_name" "https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/cdnfly/$tar_gz_name" "$tar_gz_name"
 echo "下载完成"
 
 echo "开始解压..."
