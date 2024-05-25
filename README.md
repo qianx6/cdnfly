@@ -47,7 +47,7 @@ curl -fsSL https://github.com/freejbgo/cdnfly-kaixin/raw/main/master.sh -o maste
 
 v5.1.16被控
 
-curl -fsSL https://github.com/freejbgo/cdnfly-kaixin/raw/main/agent.sh -o agent.sh  && chmod +x agent.sh && ./agent.sh --master-ver v5.1.13 --master-ip  --es-ip  --es-pwd 
+curl -fsSL https://github.com/freejbgo/cdnfly-kaixin/raw/main/agent.sh -o agent.sh  && chmod +x agent.sh && ./agent.sh --master-ver v5.1.13 --master-ip 1.2.3.4 --es-ip 1.2.3.4 --es-pwd 12345678
 
 
 
