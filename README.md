@@ -54,7 +54,7 @@ curl -fsSL https://github.com/freejbgo/cdnfly-kaixin/raw/main/agent.sh -o agent.
 问题解决--持续更新中：
 
 
-普通用户的账户中心中的bug修复：
+1、普通用户的账户中心中的bug修复：
 
 cd /opt/cdnfly/master/panel/src/views/account
 
@@ -67,3 +67,9 @@ ln -s ../finance/balance/ balance
 ln -s ../system/log/ log
 
 ln -s ../finance/order/ order
+
+
+2、删除/tmp/send_log/
+
+rm -rf /tmp/send_log/
+
