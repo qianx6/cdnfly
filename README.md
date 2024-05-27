@@ -7,7 +7,7 @@ web目录为云端验证文件，请自行搭建
 
 tar -zxvf web.tar.gz
 
-2、wget https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/datetime
+2、wget https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/datetime.html
 
 mkdir /web目录/common
 
