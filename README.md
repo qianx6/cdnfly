@@ -9,9 +9,13 @@ tar -zxvf web.tar.gz
 
 2、wget https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/datetime
 
-cp datetime web目录
+mkdir /web目录/common
+
+cp datetime /web目录/common/
+
 
 注意：验证服务器用bt安装，并且php版本为5.6
+
 
 0.0.0.0改成(自己搭建的验证服务器IP，主控全部需要设置，节点只需要设置auth)
 
