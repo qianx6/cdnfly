@@ -73,3 +73,8 @@ ln -s ../finance/order/ order
 
 rm -rf /tmp/send_log/
 
+
+3、因为开心版的带宽和流量统计是每秒执行一次任务，所以需要替换成每隔5分钟执行一次任务。
+
+在/opt/cdnfly/master/tasks目录中覆盖bandwidth_monitor.so文件
+
