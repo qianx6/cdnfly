@@ -3,15 +3,10 @@
 
 web目录为云端验证文件，请自行搭建
 
-1、wget https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/web/web.tar.gz
+wget https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/web/web.tar.gz
 
 tar -zxvf web.tar.gz
 
-2、wget https://raw.githubusercontent.com/freejbgo/cdnfly-kaixin/main/datetime
-
-mkdir /web目录/common
-
-cp datetime /web目录/common/
 
 
 注意：验证服务器用bt安装，并且php版本为5.6
@@ -24,10 +19,6 @@ vi /etc/hosts
 0.0.0.0 auth.cdnfly.cn (主控和节点都要设置)
 
 0.0.0.0 monitor.cdnfly.cn（只需主控设置）
-
-0.0.0.0 update.cdnfly.cn (注意：如果cdnfly官网挂了再设置，需要在主控和节点都设置，并且需要在安装之前就需要设置)
-
-0.0.0.0 dl2.cdnfly.cn (注意：如果cdnfly官网挂了再设置，需要在主控和节点都设置，并且需要在安装之前就需要设置)
 
 
 主控登录地址为: http://主控IP/
