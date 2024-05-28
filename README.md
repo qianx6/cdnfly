@@ -79,3 +79,16 @@ rm -rf /tmp/send_log/
 
 在/opt/cdnfly/master/tasks目录中覆盖bandwidth_monitor.so文件
 
+
+4、添加新节点显示同步cc_filter nginx openresty等错误 或者 重启节点显示filebeat: ERROR (spawn error)
+
+chown root /opt/cdnfly/agent/conf/filebeat.yml
+
+chmod 0644 /opt/cdnfly/agent/conf/filebeat.yml
+
+supervisorctl restart all
+
+
+
+
+
