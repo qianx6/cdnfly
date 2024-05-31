@@ -21,7 +21,7 @@ if(strpos($url, '/common/timestamp2') !== false && $method=='POST'){
 }
 elseif(strpos($url, '/auth2') !== false && $method=='POST'){
     $param = parse_input2();
-    $data = ['nodes'=>10000, 'machine_code'=>$param['machine_code'], 'end_at'=>time()+3600*24*3650];
+    $data = ['nodes'=>10000, 'machine_code'=>$param['machine_code'], 'end_at'=>time()+3600*24*36500];
     echo generate_output2($data);
 }
 elseif(strpos($url, '/common/timestamp') !== false && $method=='POST'){
@@ -31,7 +31,7 @@ elseif(strpos($url, '/common/timestamp') !== false && $method=='POST'){
 }
 elseif(strpos($url, '/auth') !== false && $method=='POST'){
     $param = parse_input();
-    $data = ['nodes'=>10000, 'machine_code'=>$param['machine_code'], 'end_at'=>time()+3600*24*365];
+    $data = ['nodes'=>10000, 'machine_code'=>$param['machine_code'], 'end_at'=>time()+3600*24*36500];
     echo generate_output($data);
 }
 elseif(strpos($url, '/check') !== false && $method=='POST'){
