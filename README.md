@@ -55,13 +55,13 @@ curl -fsSL https://github.com/freejbgo/cdnfly-kaixin/raw/main/agent.sh -o agent.
 问题解决--持续更新中：
 
 
-1、普通用户的账户中心中的bug修复：
+1、普通用户的账户中心中的bug修复
 
 cd /opt/cdnfly/master/panel/src/views/account
 
 删除三个文件：balance、log、order
 
-然后用下面命令重新生成软链接：
+然后用下面命令重新生成软链接
 
 ln -s ../finance/balance/ balance
 
@@ -75,7 +75,7 @@ ln -s ../finance/order/ order
 rm -rf /tmp/send_log/
 
 
-3、因为开心版的带宽和流量统计是每秒执行一次任务，所以需要替换成每隔5分钟执行一次任务。
+3、因为开心版的带宽和流量统计是每秒执行一次任务，所以需要替换成每隔5分钟执行一次任务
 
 在/opt/cdnfly/master/tasks目录中覆盖bandwidth_monitor.so文件
 
@@ -88,6 +88,12 @@ chmod 0644 /opt/cdnfly/agent/conf/filebeat.yml
 
 supervisorctl restart all
 
+
+5、修改主控和节点的cron任务
+
+crontab -e
+
+*/10 * * * * /usr/sbin/ntpdate -u pool.ntp.org > /dev/null 2>&1 || (date_str=`/usr/bin/date '+\%Y-\%m-\%d \%H:\%M:\%S'` && timedatectl set-ntp false && echo $date_str && timedatectl set-time "$date_str")
 
 
 
