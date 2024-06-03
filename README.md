@@ -93,7 +93,7 @@ supervisorctl restart all
 
 crontab -e
 
-*/10 * * * * /usr/sbin/ntpdate -u pool.ntp.org > /dev/null 2>&1 || (date_str=`/usr/bin/date '+\%Y-\%m-\%d \%H:\%M:\%S'` && timedatectl set-ntp false && echo $date_str && timedatectl set-time "$date_str")
+*/10 * * * * /usr/sbin/ntpdate -u pool.ntp.org > /dev/null 2>&1 || (date_str=\`/usr/bin/date '+\%Y-\%m-\%d \%H:\%M:\%S'\` && timedatectl set-ntp false && echo $date_str && timedatectl set-time "$date_str")
 
 
 
